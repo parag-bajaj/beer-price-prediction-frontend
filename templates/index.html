@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beer Price Prediction Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Diageo Beer Price Prediction</h1>
+    <div class="chat-box" id="chat-box">
+      <div class="chat-message bot">
+        Hello! Please describe your beer order in one sentence. For example:<br><br>
+        <i>"I am a premium user aged 24 using a mobile with iOS on a large screen. It's Friday, sunny, and I'm in a rural area with high demand. Base selling price is 7.5."</i>
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <textarea id="user-input" placeholder="Enter your beer purchase details..." autocomplete="off"></textarea>
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
